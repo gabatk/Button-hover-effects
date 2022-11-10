@@ -121,3 +121,13 @@ button::after {
 .slice:hover:after {
     right: 0;
 }
+
+/* hmm */
+.hmm {
+    border: none;
+    transform: .5s;
+}
+
+.hmm:hover {
+    box-shadow: 2px 3px 0 rgba(255, 255, 255, 0.8), inset 6px 6px 10px rgba(0, 0, 0, 0.25);
+}
