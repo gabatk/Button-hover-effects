@@ -84,6 +84,7 @@ button::after {
 .span2 {
     left: -50%;
     transition: left .5s;
+    color: rgb(57, 133, 219);
 }
 
 .slide:hover .span1 {
@@ -92,4 +93,31 @@ button::after {
 
 .slide:hover .span2 {
     left: 50%;
+}
+
+/* slice */
+.slice::before,
+.slice::after {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(57, 133, 219);
+
+}
+
+.slice::before {
+    top: -50%;
+    left: -100%;
+}
+
+.slice::after {
+    bottom: -50%;
+    right: -100%;
+}
+
+.slice:hover:before {
+    left: 0;
+}
+
+.slice:hover:after {
+    right: 0;
 }
