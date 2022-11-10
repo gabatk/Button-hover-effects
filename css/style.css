@@ -14,3 +14,26 @@ body {
     background-color: #333;
     overflow: hidden;
 }
+
+button {
+    position: relative;
+    margin: 20px;
+    padding: 30px 50px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button::before,
+button::after {
+    display: block;
+    position: absolute;
+    content: '';
+    transition: .5s;
+    z-index: -1;
+}
